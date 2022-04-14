@@ -1,8 +1,12 @@
 <template>
-  <h3>{{ title }}</h3>
+  <h3 v-show="isShow">{{ title }}</h3>
   <p>
     <button @click="buttonClicked()">눌러주세요</button>
   </p>
+  <p>
+    <input type="text" v-model="textData">
+  </p>
+  <p>{{ textData }}</p>
 </template>
 
 <script>
@@ -15,6 +19,8 @@ export default {
   },
   data() {
     return {
+      textData: 'kim soongon....',
+      isShow: true,
       title: '상품목록이에요..',
     }
   }

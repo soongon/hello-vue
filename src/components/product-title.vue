@@ -11,9 +11,18 @@
 
 <script>
 export default {
-  props: [
-    'isShow', 'title'
-  ],
+  props: {
+    isShow: {
+      type: Boolean,
+      required: true,
+    },
+    title: {
+      type: String,
+      default() {
+        return 'no title';
+      }
+    }
+  },
   data() {
     return {
       textData: '',

@@ -32,7 +32,7 @@ export default {
   data() {
     return {
       isShow: true,
-      title: '상품목록이에요..',
+      // title: '상품목록이에요..',
       products: [],
     }
   }

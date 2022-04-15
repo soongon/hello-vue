@@ -1,6 +1,7 @@
 <template>
   <header>
-    <h1>vue 쇼핑몰(component)</h1>
+    <h1>vue <slot/>(component)</h1>
+    <slot/>
   </header>
 </template>
 

@@ -11,25 +11,10 @@
 </template>
 
 <script>
-import axios from 'axios';
 export default {
-  created() {
-    this.getDataFromServer();
-  },
-  methods: {
-    async getDataFromServer() {
-      axios.get('https://jsonplaceholder.typicode.com/posts')
-        .then(res => {
-          console.log(res.data);
-          this.products = res.data;
-        });
-    }
-  },
-  data() {
-    return {
-      products: [],
-    };
-  }
+  props: [
+    'products',
+  ],
 }
 </script>
 

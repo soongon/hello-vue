@@ -11,19 +11,20 @@
 
 <script>
 export default {
+  props: [
+    'isShow', 'title'
+  ],
+  data() {
+    return {
+      textData: '',
+    }
+  },
   methods: {
     buttonClicked() {
       console.log('button clicked...');
       this.title = '버튼이 클릭되어 변수 교체...';
     }
   },
-  data() {
-    return {
-      textData: 'kim soongon....',
-      isShow: true,
-      title: '상품목록이에요..',
-    }
-  }
 }
 </script>
 
